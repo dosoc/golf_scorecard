@@ -101,3 +101,17 @@ body {
     width: 40px;
     height: 60px;
 }
+
+@media screen and (max-width: 720px){
+    .scorecard {
+        flex-direction: column;
+    }
+    .score-card-container{
+        justify-content: start;
+        margin: 0;
+    }
+    .score-input-container{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+}
