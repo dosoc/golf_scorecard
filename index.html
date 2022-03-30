@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="scorecard">
+        <div class="score-input-container">
+            <div class="span-two select-hole">Select Score</div>
+            <div id="current-hole" class="current-hole span-two">1</div>
+            <button data-number class="small">1</button>
+            <button data-number class="small">2</button>
+            <button data-number class="big">3</button>
+            <button data-number class="big">4</button>
+            <button data-number class="big">5</button>
+            <button data-number class="big">6</button>
+            <button data-number class="small">7</button>
+            <button data-number class="small">8</button>
+            <button data-function class="span-two">BACK</button>
+            <button data-submit class="span-two">NEXT</button>
+            <button data-clear class="span-two">CLEAR</button>
+            <button data-total class="span-two">SUBMIT</button>
+        </div>
+        <div class="score-card-container">
+            <table class="score-table">
+                <tr class="hole-numbers">
+                    <th>Hole</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>IN</th>
+                </tr>
+                <tr class="scores">
+                    <th>Scores</th>
+                    <td data-score></td>
+                    <td data-score></td>
+                    <td data-score></td>
+                    <td data-score></td>
+                    <td data-score></td>
+                    <td data-score></td>
+                    <td data-score></td>
+                    <td data-score></td>
+                    <td data-score></td>
+                    <td class="total" id="in"></td>
+                </tr>
+                <tr class="hole-numbers">
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
+                    <th>13</th>
+                    <th>14</th>
+                    <th>15</th>
+                    <th>16</th>
+                    <th>17</th>
+                    <th>18</th>
+                    <th>OUT</th>
+                    <th>TOTAL</th>
+                </tr>
+                
+                <tr class="scores">
+                    <td data-score></td>
+                    <td data-score></td>
+                    <td data-score></td>
+                    <td data-score></td>
+                    <td data-score></td>
+                    <td data-score></td>
+                    <td data-score></td>
+                    <td data-score></td>
+                    <td data-score></td>
+                    <td class="total" id="out"></td>
+                    <td class="total" id="total"></td>
+                </tr>
+            </table>
+        </div>  
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, green, rgb(182, 245, 80));
+
+}
+.score-input-container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 75px 100px 100px 75px 75px;
+}
+
+.score-input-container > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+.score-input-container > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+.score-input-container > button::selection {
+    background-color: rgba(54, 54, 253, .9);
+}
+.span-two {
+    grid-column: span 2;
+}
+.span-three {
+    grid-column: span 3;
+}
+.select-hole,
+.current-hole {
+    font-size: 1.5rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(72, 151, 255, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.current-hole {
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.scorecard {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+.score-card-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    
+}
+.score-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: .9rem;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.hole-numbers {
+    background: rgba(72, 151, 255, 0.75);
+}
+.score-table th {
+    width: 60px;
+    height: 40px;
+}
+.score-table td {
+    background: rgba(255, 255, 255, .75);
+}
+.total {
+    width: 60px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.score-table tr {
+    border: 1px solid white;
+}
+.scores td {
+    text-align: center;
+    color: red;
+}
+.submitted-score {
+    color: black;
+}
+.scores td {
+    width: 40px;
+    height: 60px;
+}
