@@ -1,2 +1,2 @@
 # golf_scorecard
-simple scorecard with button inputs
+A single page application for recording and tracking golf scores
